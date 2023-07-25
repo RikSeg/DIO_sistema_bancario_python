@@ -48,6 +48,7 @@ def funcSaque():
             print("[SAQUE EXECUTADO COM SUCESSO]")
 
 
+
 def funcExtrato():
     global extratoStr
     if(extratoStr is ""):
