@@ -1,3 +1,4 @@
+#VARIÁVEIS GLOBAIS
 menu = """
 
 [d] Depositar
@@ -14,7 +15,9 @@ saqueStr = "- Saque: R$"
 extratoStr = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
+##
 
+#Funções auxiliares
 def funcdeposito():
     global saldo 
     global extratoStr
@@ -48,26 +51,34 @@ def funcsaque():
 
 def funcextrato():
     global extratoStr
-    if(extratoStr is ""):
+    if(extratoStr == ""):
         print("[NÃO FORAM EFETUADAS TRANSAÇÕES]")
     else:    
         print(extratoStr)
         print("Total: R${:.{}f}".format(saldo,2))
+##
 
-while True:
+#Função principal
+def main():
+    #Seletor de opções
+    while True:
 
-    opcao = input(menu)
+        opcao = input(menu)
 
-    if opcao == "d":
-        print("\n[DEPÓSITO]")
-        funcdeposito()
+        if opcao == "d":
+            print("\n[DEPÓSITO]")
+            funcdeposito()
 
-    elif opcao == "s":
-        print("\n[SAQUE]")
-        funcsaque()
-    elif opcao == "e":
-        print("\n[EXTRATO]")
-        funcextrato()
-    elif opcao == "q":
-        print("\nSaindo...")
-        break
+        elif opcao == "s":
+            print("\n[SAQUE]")
+            funcsaque()
+        elif opcao == "e":
+            print("\n[EXTRATO]")
+            funcextrato()
+        elif opcao == "q":
+            print("\nSaindo...")
+            break
+##
+
+#execução da função principal
+main()
