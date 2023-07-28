@@ -1,6 +1,4 @@
-
 menu = """
-[SISTEMA DE BANCO]
 
 [d] Depositar
 [s] Sacar
@@ -17,7 +15,7 @@ extratoStr = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
 
-def funcDeposito():
+def funcdeposito():
     global saldo 
     global extratoStr
     global depoStr
@@ -26,7 +24,7 @@ def funcDeposito():
     extratoStr += depoStr + depo + "\n"
     print("[DEPOSITO EXECUTADO COM SUCESSO]")
 
-def funcSaque():
+def funcsaque():
     global saldo
     global extratoStr
     global LIMITE_SAQUES
@@ -48,8 +46,7 @@ def funcSaque():
             print("[SAQUE EXECUTADO COM SUCESSO]")
 
 
-
-def funcExtrato():
+def funcextrato():
     global extratoStr
     if(extratoStr is ""):
         print("[NÃO FORAM EFETUADAS TRANSAÇÕES]")
@@ -63,14 +60,14 @@ while True:
 
     if opcao == "d":
         print("\n[DEPÓSITO]")
-        deposito()
+        funcdeposito()
 
     elif opcao == "s":
         print("\n[SAQUE]")
-        saque()
+        funcsaque()
     elif opcao == "e":
         print("\n[EXTRATO]")
-        extrato()
+        funcextrato()
     elif opcao == "q":
         print("\nSaindo...")
         break
