@@ -1,8 +1,15 @@
 # DIO_sistema_bancario_python
-Simples sistema bancário do desafio da DIO
-
+Desafio: Simples sistema bancário do desafio da DIO
+## Como rodar e operações
 - Apenas rode o script com "python sistBanc.py"
-
-<img href="./imgs/Deposito.png">
-<img href="./imgs/Saque.png">
-<img href="./imgs/Extrato.png">
+- Deposito:
+  
+  <img src="./imgs/Deposito.png">
+  
+- Saque:
+  
+  <img src="./imgs/Saque.png">
+  
+- Extrato:
+  
+  <img src="./imgs/Extrato.png">
