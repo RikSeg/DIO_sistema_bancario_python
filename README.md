@@ -2,3 +2,7 @@
 Simples sistema bancário do desafio da DIO
 
 - Apenas rode o script com "python sistBanc.py"
+
+<img href="./imgs/Deposito.png">
+<img href="./imgs/Saque.png">
+<img href="./imgs/Extrato.png">
