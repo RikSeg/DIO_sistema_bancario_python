@@ -1,15 +1,8 @@
 # DIO_sistema_bancario_python
-Desafio: Simples sistema bancário do desafio da DIO
+Desafio:Versão 2 do sistema bancário do desafio da DIO, contendo criação de usuário e contas para usuários, além de permitir listar todos os usuários
+
 ## Como rodar e operações
-- Apenas rode o script com "python sistBanc.py"
-- Deposito:
-  
-  <img src="./imgs/Deposito.png">
-  
-- Saque:
-  
-  <img src="./imgs/Saque.png">
-  
-- Extrato:
-  
-  <img src="./imgs/Extrato.png">
+- Apenas rode o script com "python sistBanc.py" deve abrir como a imagem seguinte:
+
+<img src="imgs/menu.png" alt="">
+
